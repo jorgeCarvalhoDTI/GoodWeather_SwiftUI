@@ -14,6 +14,9 @@
 		9333210B2B308DA600780165 /* GoodWeather_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333210A2B308DA600780165 /* GoodWeather_SwiftUITests.swift */; };
 		933321152B308DA600780165 /* GoodWeather_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933321142B308DA600780165 /* GoodWeather_SwiftUIUITests.swift */; };
 		933321172B308DA600780165 /* GoodWeather_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933321162B308DA600780165 /* GoodWeather_SwiftUIUITestsLaunchTests.swift */; };
+		933321252B30901A00780165 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933321242B30901A00780165 /* Weather.swift */; };
+		933321282B30910800780165 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933321272B30910800780165 /* WeatherService.swift */; };
+		93932D632B3B181300B6859F /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93932D622B3B181300B6859F /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		933321102B308DA600780165 /* GoodWeather_SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeather_SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		933321142B308DA600780165 /* GoodWeather_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeather_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		933321162B308DA600780165 /* GoodWeather_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeather_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		933321242B30901A00780165 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		933321272B30910800780165 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		93932D622B3B181300B6859F /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 		933320F82B308DA300780165 /* GoodWeather_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				93932D612B3B180200B6859F /* ViewModels */,
+				933321262B3090EE00780165 /* Services */,
+				933321232B308EC900780165 /* Models */,
 				933320F92B308DA300780165 /* GoodWeather_SwiftUIApp.swift */,
 				933320FB2B308DA300780165 /* ContentView.swift */,
 				933320FD2B308DA600780165 /* Assets.xcassets */,
@@ -125,6 +134,30 @@
 				933321162B308DA600780165 /* GoodWeather_SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = GoodWeather_SwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		933321232B308EC900780165 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				933321242B30901A00780165 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		933321262B3090EE00780165 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				933321272B30910800780165 /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		93932D612B3B180200B6859F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				93932D622B3B181300B6859F /* WeatherViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93932D632B3B181300B6859F /* WeatherViewModel.swift in Sources */,
+				933321282B30910800780165 /* WeatherService.swift in Sources */,
 				933320FC2B308DA300780165 /* ContentView.swift in Sources */,
+				933321252B30901A00780165 /* Weather.swift in Sources */,
 				933320FA2B308DA300780165 /* GoodWeather_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
